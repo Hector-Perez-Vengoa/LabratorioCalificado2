@@ -14,10 +14,16 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnIrAEjercicio.setOnClickListener {
+        binding.btnIrAEjercicio1.setOnClickListener {
             val intent = Intent(this, Ejercicio01Activity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnIrAEjercicio2.setOnClickListener {
+            val intent = Intent(this, Ejercicio02FormActivity::class.java)
             startActivity(intent)
         }
     }
 }
+
 

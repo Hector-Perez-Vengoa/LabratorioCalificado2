@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTituloResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedido"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivIconoNombre"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_person"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloResultado"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvNombreCliente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/ivIconoNombre"
+        app:layout_constraintTop_toTopOf="@id/ivIconoNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"/>
+
+    <ImageView
+        android:id="@+id/ivIconoNumero"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_phone"
+        app:layout_constraintTop_toBottomOf="@id/ivIconoNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvNumeroCliente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/ivIconoNumero"
+        app:layout_constraintTop_toTopOf="@id/ivIconoNumero"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"/>
+
+    <ImageView
+        android:id="@+id/ivIconoProductos"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_products"
+        app:layout_constraintTop_toBottomOf="@id/ivIconoNumero"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvProductos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/ivIconoProductos"
+        app:layout_constraintTop_toTopOf="@id/ivIconoProductos"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"/>
+
+    <ImageView
+        android:id="@+id/ivIconoUbicacion"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_person"
+        app:layout_constraintTop_toBottomOf="@id/ivIconoProductos"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvUbicacion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/ivIconoUbicacion"
+        app:layout_constraintTop_toTopOf="@id/ivIconoUbicacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"/>
+
+    <Button
+        android:id="@+id/btnLlamar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="LLAMAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.33"
+        android:layout_margin="4dp"/>
+
+    <Button
+        android:id="@+id/btnWsp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="WSP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnLlamar"
+        app:layout_constraintWidth_percent="0.34"
+        android:layout_margin="4dp"/>
+
+    <Button
+        android:id="@+id/btnMaps"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="MAPS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnWsp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.33"
+        android:layout_margin="4dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
